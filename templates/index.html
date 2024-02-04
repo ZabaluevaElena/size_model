@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clothes Size Prediction</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>The best way to avoid mistakes in buying clothes through online shops.</h2>
+    <form action="postdata" method="post">
+        <table>
+        <tr>
+            <td><label for="weight"> Weight (in kgs):</label></td>
+            <td><input type="range" id="weight" name="weight" min="36" max="100" value="60" oninput="this.nextElementSibling.value = this.value" />
+            <output>60</output></td>
+        </tr>
+
+        <tr>
+            <td><label for="age">Age</label></td>
+            <td><input type="range" id="age" name="age" min="14" max="88" value="40" oninput="this.nextElementSibling.value = this.value" />
+            <output>40</output></td>
+        </tr>
+        <tr>
+            <td><label for="height">Height (in cm)</label></td>
+            <td><input type="range" id="height" name="height" min="135" max="200" value="170" oninput="this.nextElementSibling.value = this.value" />
+            <output>170</output></td>
+        </tr>
+        <table>
+        <input type="submit" value="Send" />
+    </form>
+</body>
+</html>

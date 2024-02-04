@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clothes Size Prediction</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <h2>The best way to avoid mistakes in buying clothes through online shops.</h2>
+    <p>Your preferred size: {{ predict }} ({{ 100*p_pred|round(1) }}%)</p>
+    <form action="/" method="get">
+    <input type="submit" value="Back" />
+    </form>
+</body>
+</html>
